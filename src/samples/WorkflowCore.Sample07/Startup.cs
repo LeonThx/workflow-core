@@ -37,7 +37,12 @@ namespace WorkflowCore.Sample07
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(); 
+            app.UseMvc(); //x => x.);
+
+            //var fp = new EmbeddedFileProvider(typeof(ClassLibrary1.Class1).GetTypeInfo().Assembly, "ClassLibrary1.Content");
+            //var opts = new StaticFileOptions();
+            //opts.FileProvider = fp;
+            //app.UseStaticFiles(opts);
         }
     }
 }
