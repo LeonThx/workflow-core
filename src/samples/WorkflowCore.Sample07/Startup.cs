@@ -38,7 +38,7 @@ namespace WorkflowCore.Sample07
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(); //x => x.);
+            app.UseMvc(x => x.MapAreaRoute(); //x => x.);
 
             //var fp = new EmbeddedFileProvider(typeof(ClassLibrary1.Class1).GetTypeInfo().Assembly, "ClassLibrary1.Content");
             //var opts = new StaticFileOptions();
